@@ -8,6 +8,10 @@
 ## Bot Demonstration
 ![Bot Demo](images/Demo-Bot.gif)
 
-**URL:** <https://ratedollarv3.rewrite5.repl.co>
+**Bot Status:** <https://ratedollarv3.rewrite5.repl.co>
 
-**URL:** <https://telegram.org>
+**Bot:** <https://t.me/Dolar_Now_Bot>
+
+**Information Updates:** <https://t.me/dollar_now_updates>
+
+**Telegram:** <https://telegram.org>
