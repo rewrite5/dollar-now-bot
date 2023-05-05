@@ -1,9 +1,7 @@
 import os
 import logging
-from telegram import Update
-from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
-from telegram import InlineQueryResultArticle, InputTextMessageContent
-from telegram.ext import InlineQueryHandler
+from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, MessageHandler, filters, InlineQueryHandler
+from telegram import InlineQueryResultArticle, InputTextMessageContent, Update
 from scrapper import Scrapper
 from keep_alive import keep_alive
 from dotenv import load_dotenv
@@ -127,5 +125,8 @@ if __name__ == '__main__':
 
   inline_calculator_handler = InlineQueryHandler(inline_calculator)
   application.add_handler(inline_calculator_handler)
+
+  echo_handler = MessageHandler(filters.TEXT & (~filters.COMMAND), echo)
+  application.add_handler(echo_handler)
 
   application.run_polling()
