@@ -155,8 +155,7 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 
 if __name__ == '__main__':
-  #keep_alive()
-  TOKEN = '6122977305:AAGPpnbY_O6_brfOM58NwqEJVNnTeA2mp2U'
+  keep_alive()
   application = ApplicationBuilder().token(TOKEN).build()
 
   # start_handler = CommandHandler('start', start)
